@@ -1,0 +1,98 @@
+[
+  {
+    "id": "react-foundations",
+    "title": "React Foundations",
+    "category": "Web Development",
+    "level": "Beginner",
+    "durationHours": 12,
+    "rating": 4.8,
+    "students": 5421,
+    "instructor": "Dana Mitchell",
+    "summary": "Build your first component-driven interfaces with hooks, props and state.",
+    "tags": ["react", "javascript", "frontend"]
+  },
+  {
+    "id": "advanced-css-layout",
+    "title": "Advanced CSS & Responsive Layout",
+    "category": "Design",
+    "level": "Intermediate",
+    "durationHours": 9,
+    "rating": 4.6,
+    "students": 3110,
+    "instructor": "Priya Raman",
+    "summary": "Master flexbox, grid and container queries to build adaptive layouts.",
+    "tags": ["css", "responsive", "design"]
+  },
+  {
+    "id": "typescript-in-practice",
+    "title": "TypeScript in Practice",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "durationHours": 14,
+    "rating": 4.7,
+    "students": 2870,
+    "instructor": "Marco Silva",
+    "summary": "Add type safety to real projects without slowing your team down.",
+    "tags": ["typescript", "javascript", "tooling"]
+  },
+  {
+    "id": "ux-research-essentials",
+    "title": "UX Research Essentials",
+    "category": "Design",
+    "level": "Beginner",
+    "durationHours": 7,
+    "rating": 4.5,
+    "students": 1980,
+    "instructor": "Aisha Bello",
+    "summary": "Plan interviews, run usability tests and turn findings into decisions.",
+    "tags": ["ux", "research", "design"]
+  },
+  {
+    "id": "node-apis-from-scratch",
+    "title": "Node APIs from Scratch",
+    "category": "Backend",
+    "level": "Intermediate",
+    "durationHours": 16,
+    "rating": 4.4,
+    "students": 2450,
+    "instructor": "Tom Becker",
+    "summary": "Design, build and document REST APIs with Express and PostgreSQL.",
+    "tags": ["node", "api", "backend"]
+  },
+  {
+    "id": "data-viz-with-d3",
+    "title": "Data Visualisation with D3",
+    "category": "Data",
+    "level": "Advanced",
+    "durationHours": 18,
+    "rating": 4.9,
+    "students": 1340,
+    "instructor": "Lena Fischer",
+    "summary": "Turn datasets into interactive, accessible charts for the web.",
+    "tags": ["d3", "data", "visualisation"]
+  },
+  {
+    "id": "accessible-frontend",
+    "title": "Building Accessible Frontends",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "durationHours": 10,
+    "rating": 4.8,
+    "students": 2015,
+    "instructor": "Dana Mitchell",
+    "summary": "Ship interfaces that work with keyboards, screen readers and zoom.",
+    "tags": ["accessibility", "frontend", "html"]
+  },
+  {
+    "id": "product-analytics",
+    "title": "Product Analytics Fundamentals",
+    "category": "Data",
+    "level": "Beginner",
+    "durationHours": 6,
+    "rating": 4.3,
+    "students": 1655,
+    "instructor": "Marco Silva",
+    "summary": "Measure activation, retention and funnels to guide product work.",
+    "tags": ["analytics", "data", "product"]
+  }
+]
