@@ -50,7 +50,7 @@ export default function Courses() {
 
   return (
     <Container className="py-12">
-      <header className="max-w-2xl">
+      <header className="max-w-2xl hidden">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Course catalogue</h1>
         <p className="mt-2 text-slate-600">
           Search and filter {status === 'success' ? courses.length : ''} courses across web
@@ -58,7 +58,7 @@ export default function Courses() {
         </p>
       </header>
 
-      <Card className="mt-8 p-4">
+      <Card className="mt-8 p-4 hidden">
         <div className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
           <div>
             <label htmlFor="course-search" className="sr-only">
