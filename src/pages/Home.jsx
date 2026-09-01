@@ -42,7 +42,7 @@ export default function Home() {
     backgroundImage:
       "url('https://img-c.udemycdn.com/notices/home_carousel_slide/image/fa8360c0-cda9-4018-b112-bb82a3c96d31.jpg')",
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "100%",
   }} className="border-b border-slate-200 bg-gradient-to-b from-brand-50 to-slate-50">
         <Container className="grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
