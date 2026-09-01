@@ -36,7 +36,7 @@ export default function Navbar() {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-500 text-white">
             L
           </span>
-          LearnHub
+          Gyaan-Academy
         </NavLink>
 
         <div className="hidden items-center gap-1 md:flex">
