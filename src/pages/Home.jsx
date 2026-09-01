@@ -38,19 +38,24 @@ export default function Home() {
 
   return (
     <>
-      <section className="border-b border-slate-200 bg-gradient-to-b from-brand-50 to-slate-50">
+      <section   style={{
+    backgroundImage:
+      "url('https://img-c.udemycdn.com/notices/home_carousel_slide/image/fa8360c0-cda9-4018-b112-bb82a3c96d31.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }} className="border-b border-slate-200 bg-gradient-to-b from-brand-50 to-slate-50">
         <Container className="grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
             <p className="mb-3 inline-flex rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-700 ring-1 ring-brand-100">
-              New: Accessible Frontend track
+              Accessible Featured Courses
             </p>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            <h1 className="text-4xl text-white font-bold tracking-tight text-slate-900 sm:text-5xl">
               {isAuthenticated
                 ? `Welcome back, ${user.name}.`
                 : 'Build real skills, one project at a time.'}
             </h1>
-            <p className="mt-4 max-w-lg text-lg text-slate-600">
-              LearnHub is a hands-on platform for web, design and data. Discover courses, track your
+            <p className="mt-4 text-white  max-w-lg text-lg text-slate-600">
+              GyaanAcademy is a hands-on platform for web, design and data. Discover courses, track your
               enrolments and visualise your progress.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -66,15 +71,15 @@ export default function Home() {
             <dl className="mt-10 flex gap-8">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <dt className="text-sm text-slate-500">{stat.label}</dt>
+                  <dt className="text-sm text-slate-500 text-white">{stat.label}</dt>
                   <dd className="text-2xl font-bold text-slate-900">{stat.value}</dd>
                 </div>
               ))}
             </dl>
           </div>
 
-          <Card className="p-6">
-            <p className="text-sm font-semibold text-slate-900">This week on LearnHub</p>
+          {/* <Card className="p-6">
+            <p className="text-sm font-semibold text-slate-900">This week on GyaanAcademy</p>
             <ul className="mt-4 space-y-3 text-sm text-slate-600">
               <li className="flex gap-3">
                 <span aria-hidden="true">📈</span> 4 new lessons in Data Visualisation with D3
@@ -86,13 +91,13 @@ export default function Home() {
                 <span aria-hidden="true">🎓</span> 1,200 learners earned a certificate
               </li>
             </ul>
-          </Card>
+          </Card> */}
         </Container>
       </section>
 
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-bold text-slate-900">Why LearnHub</h2>
+          <h2 className="text-2xl font-bold text-slate-900">Why GyaanAcademy</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <Card key={feature.title} className="p-6">

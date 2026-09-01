@@ -28,9 +28,9 @@ export default function About() {
     <>
       <section className="border-b border-slate-200 bg-white">
         <Container className="max-w-3xl py-16">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900">About LearnHub</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900">About GyaanAcademy</h1>
           <p className="mt-4 text-lg text-slate-600">
-            LearnHub started as an internal training project and grew into a public platform for
+            GyaanAcademy started as an internal training project and grew into a public platform for
             hands-on technology education. Our goal is simple: help people learn skills they can use
             at work the same week.
           </p>

@@ -34,7 +34,7 @@ export default function Navbar() {
       <Container as="nav" className="flex h-16 items-center justify-between" aria-label="Main">
         <NavLink to="/" className="flex items-center gap-2 font-bold text-slate-900">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-500 text-white">
-            L
+            GA
           </span>
           Gyaan-Academy
         </NavLink>
