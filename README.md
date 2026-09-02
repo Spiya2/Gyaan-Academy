@@ -21,4 +21,9 @@ Responsive — Perfect on mobile, tablet, desktop
 Secure Auth — Login/register with validation + session persistence
 Vite-powered, optimized, no unnecessary re-renders -->
 
+<!-- Deployed URL -->
+
+https://gyaan-academy.vercel.app/
+
 <!-- Since its only a frontend design, we have only developed an UI for it. Most of the backend workable features will be done on the final assessment -->
+
