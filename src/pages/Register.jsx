@@ -43,6 +43,8 @@ export default function Register() {
 
   return (
     <Container className="flex justify-center py-16">
+            <div className="flex align-items-center">
+
       <Card className="w-full max-w-md p-8">
         <h1 className="text-2xl font-bold text-slate-900">Create your account</h1>
         <p className="mt-1 text-sm text-slate-600">Free forever. No credit card required.</p>
@@ -102,6 +104,9 @@ export default function Register() {
           </Link>
         </p>
       </Card>
+       <img   className='w-100 h-100 object-contain rounded-lg shadow-md' 
+ src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/0HOj0Gto8RQyChq9gRFrM/e3a107a7e481695d695384a76708906b/our-story---about-coursera.jpg?auto=format%2C%20compress&dpr=2&w=1061&h=755&q=40&fit=clip" />
+   </div>
     </Container>
   )
 }

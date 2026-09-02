@@ -42,19 +42,19 @@ export default function Home() {
     backgroundImage:
       "url('https://img-c.udemycdn.com/notices/home_carousel_slide/image/fa8360c0-cda9-4018-b112-bb82a3c96d31.jpg')",
     backgroundSize: "cover",
-    backgroundPosition: "100%",
+    backgroundPosition: "50%",
   }} className="border-b border-slate-200 bg-gradient-to-b from-brand-50 to-slate-50">
         <Container className="grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-24">
-          <div>
+          <div className='bg-white p-5 rounded-lg'>
             <p className="mb-3 inline-flex rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-700 ring-1 ring-brand-100">
               Accessible Featured Courses
             </p>
-            <h1 className="text-4xl text-white font-bold tracking-tight text-slate-900 sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
               {isAuthenticated
                 ? `Welcome back, ${user.name}.`
                 : 'Build real skills, one project at a time.'}
             </h1>
-            <p className="mt-4 text-white  max-w-lg text-lg text-slate-600">
+            <p className="mt-4  max-w-lg text-lg text-slate-600">
               GyaanAcademy is a hands-on platform for web, design and data. Discover courses, track your
               enrolments and visualise your progress.
             </p>
@@ -71,7 +71,7 @@ export default function Home() {
             <dl className="mt-10 flex gap-8">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <dt className="text-sm text-slate-500 text-white">{stat.label}</dt>
+                  <dt className="text-sm text-slate-500">{stat.label}</dt>
                   <dd className="text-2xl font-bold text-slate-900">{stat.value}</dd>
                 </div>
               ))}

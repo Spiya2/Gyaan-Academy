@@ -43,47 +43,54 @@ export default function Login() {
 
   return (
     <Container className="flex justify-center py-16">
-      <Card className="w-full max-w-md p-8">
-        <h1 className="text-2xl font-bold text-slate-900">Log in</h1>
-        <p className="mt-1 text-sm text-slate-600">Welcome back. Enter your details to continue.</p>
+      <div className="flex align-items-center">
+        <img   className='w-100 h-100 object-contain rounded-lg shadow-md' 
+ src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/0HOj0Gto8RQyChq9gRFrM/e3a107a7e481695d695384a76708906b/our-story---about-coursera.jpg?auto=format%2C%20compress&dpr=2&w=1061&h=755&q=40&fit=clip" />
 
-        {formError && (
-          <Alert tone="error" className="mt-6">
-            {formError}
-          </Alert>
-        )}
+        <Card className="w-full max-w-md p-8">
+          <h1 className="text-2xl font-bold text-slate-900">Log in</h1>
+          <p className="mt-1 text-sm text-slate-600">
+            Welcome back. Enter your details to continue.
+          </p>
 
-        <form className="mt-6 space-y-4" onSubmit={handleSubmit} noValidate>
-          <Input
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-            value={values.email}
-            onChange={update('email')}
-            error={errors.email}
-          />
-          <Input
-            label="Password"
-            type="password"
-            name="password"
-            autoComplete="current-password"
-            value={values.password}
-            onChange={update('password')}
-            error={errors.password}
-          />
-          <Button type="submit" size="lg" className="w-full" disabled={submitting}>
-            {submitting ? 'Signing in…' : 'Log in'}
-          </Button>
-        </form>
+          {formError && (
+            <Alert tone="error" className="mt-6">
+              {formError}
+            </Alert>
+          )}
 
-        <p className="mt-6 text-center text-sm text-slate-600">
-          New here?{' '}
-          <Link to="/register" className="font-medium text-brand-700 hover:underline">
-            Create an account
-          </Link>
-        </p>
-      </Card>
+          <form className="mt-6 space-y-4" onSubmit={handleSubmit} noValidate>
+            <Input
+              label="Email"
+              type="email"
+              name="email"
+              autoComplete="email"
+              value={values.email}
+              onChange={update('email')}
+              error={errors.email}
+            />
+            <Input
+              label="Password"
+              type="password"
+              name="password"
+              autoComplete="current-password"
+              value={values.password}
+              onChange={update('password')}
+              error={errors.password}
+            />
+            <Button type="submit" size="lg" className="w-full" disabled={submitting}>
+              {submitting ? 'Signing in…' : 'Log in'}
+            </Button>
+          </form>
+
+          <p className="mt-6 text-center text-sm text-slate-600">
+            New here?{' '}
+            <Link to="/register" className="font-medium text-brand-700 hover:underline">
+              Create an account
+            </Link>
+          </p>
+        </Card>
+      </div>
     </Container>
-  )
+  ) 
 }
