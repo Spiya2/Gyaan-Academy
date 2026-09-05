@@ -105,7 +105,7 @@ export default function Contact() {
           <Card className="p-8">
             {submitted && (
               <Alert tone="success" className="mb-6">
-                Thanks for reaching out! We'll reply to your email shortly.
+                Thanks for reaching out! We'll reply to you shortly.
               </Alert>
             )}
 
