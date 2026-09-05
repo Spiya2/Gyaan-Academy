@@ -15,7 +15,7 @@ Step 4: Run command - npm run dev
 Step 5: The application will run in a generated address that you can find in the terminal -->
 
 <!-- Quick Features -->
-
+<!-- Total 6 pages for now ::: Home, About, Courses, Contact, Login and Register -->
 <!-- Search & Filter — Find courses by keyword, category
 Responsive — Perfect on mobile, tablet, desktop
 Secure Auth — Login/register with validation + session persistence
