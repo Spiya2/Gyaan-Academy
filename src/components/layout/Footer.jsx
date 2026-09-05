@@ -5,9 +5,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto border-t border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
       <Container className="py-12">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand Section */}
           <div className="flex flex-col gap-3">
             <h3 className="text-lg font-bold text-slate-900">Gyaan Academy</h3>
             <p className="text-sm text-slate-600">
@@ -15,7 +13,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="flex flex-col gap-3">
             <h4 className="font-semibold text-slate-900">Platform</h4>
             <nav className="flex flex-col gap-2">
@@ -31,7 +28,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Learning Resources */}
           <div className="flex flex-col gap-3">
             <h4 className="font-semibold text-slate-900">Resources</h4>
             <nav className="flex flex-col gap-2">
@@ -47,7 +43,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Legal & Social */}
           <div className="flex flex-col gap-3">
             <h4 className="font-semibold text-slate-900">Legal</h4>
             <nav className="flex flex-col gap-2">
@@ -64,13 +59,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="my-8 border-t border-slate-200"></div>
 
-        {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-slate-600">
-            © {new Date().getFullYear()} Gyaan Academy. All rights reserved. • Built for ICT930 Advanced Web Development
+            © {new Date().getFullYear()} Gyaan Academy. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="#twitter" aria-label="Twitter" className="text-slate-500 hover:text-blue-600 transition">

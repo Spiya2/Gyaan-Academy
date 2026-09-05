@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
 
-/** App shell: persistent chrome around the routed page content. */
 export default function Layout() {
   return (
     <div className="flex min-h-screen flex-col">

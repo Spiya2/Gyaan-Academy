@@ -1,6 +1,5 @@
 import { useId } from 'react'
 
-/** Labelled text field with inline error messaging and a11y wiring. */
 export default function Input({ label, error, hint, type = 'text', className = '', ...props }) {
   const id = useId()
   const errorId = `${id}-error`

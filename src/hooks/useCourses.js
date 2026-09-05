@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react'
 import coursesDatas from '../data/courses.json'
 
-/**
- * Simulates fetching courses from an API: async resolution plus
- * loading / error / success states the UI can render against.
- */
+
 export function useCourses() {
   const [state, setState] = useState({ status: 'loading', courses: [], error: null })
 

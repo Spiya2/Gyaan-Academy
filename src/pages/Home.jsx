@@ -78,20 +78,7 @@ export default function Home() {
             </dl>
           </div>
 
-          {/* <Card className="p-6">
-            <p className="text-sm font-semibold text-slate-900">This week on GyaanAcademy</p>
-            <ul className="mt-4 space-y-3 text-sm text-slate-600">
-              <li className="flex gap-3">
-                <span aria-hidden="true">📈</span> 4 new lessons in Data Visualisation with D3
-              </li>
-              <li className="flex gap-3">
-                <span aria-hidden="true">🧩</span> Refreshed exercises in React Foundations
-              </li>
-              <li className="flex gap-3">
-                <span aria-hidden="true">🎓</span> 1,200 learners earned a certificate
-              </li>
-            </ul>
-          </Card> */}
+         
         </Container>
       </section>
 

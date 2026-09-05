@@ -1,4 +1,3 @@
-/** Accessible loading indicator. */
 export default function Spinner({ label = 'Loading…', className = '' }) {
   return (
     <div role="status" className={`flex items-center gap-3 text-slate-500 ${className}`}>

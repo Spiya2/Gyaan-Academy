@@ -8,7 +8,6 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import NotFound from './pages/NotFound.jsx'
 
-/** Reset scroll position on every route change. */
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => {

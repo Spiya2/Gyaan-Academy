@@ -47,7 +47,7 @@ export default function Register() {
 
       <Card className="w-full max-w-md p-8">
         <h1 className="text-2xl font-bold text-slate-900">Create your account</h1>
-        <p className="mt-1 text-sm text-slate-600">Free forever. No credit card required.</p>
+        <p className="mt-1 text-sm text-slate-600">Become a Member of GyaanAcademy.</p>
 
         {formError && (
           <Alert tone="error" className="mt-6">

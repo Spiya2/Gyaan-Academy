@@ -4,7 +4,6 @@ const tones = {
   info: 'border-brand-200 bg-brand-50 text-brand-800',
 }
 
-/** Inline feedback banner for form and data-loading outcomes. */
 export default function Alert({ tone = 'info', title, children, className = '' }) {
   return (
     <div

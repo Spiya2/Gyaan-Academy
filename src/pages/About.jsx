@@ -18,9 +18,9 @@ const values = [
 ]
 
 const team = [
-  { name: 'Dana Mitchell', role: 'Head of Curriculum' },
-  { name: 'Priya Raman', role: 'Lead Design Instructor' },
-  { name: 'Marco Silva', role: 'Engineering Mentor' },
+  { name: 'Sanjog Piya', role: 'Frontend Developer' },
+  { name: 'Bipul Phaiju', role: 'Backend Developer' },
+  { name: 'Subas Sapkota', role: 'Devops Engineer' },
 ]
 
 export default function About() {
@@ -87,8 +87,8 @@ export default function About() {
         <Container>
           <Card className="flex flex-col items-start justify-between gap-4 bg-brand-600 p-8 text-white sm:flex-row sm:items-center">
             <div>
-              <h2 className="text-xl font-bold">Ready to start learning?</h2>
-              <p className="mt-1 text-brand-50">
+              <h2 className="text-xl text-black font-bold">Ready to start learning?</h2>
+              <p className="mt-1 text-black">
                 Create a free account and enrol in your first course today.
               </p>
             </div>

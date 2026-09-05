@@ -1,4 +1,3 @@
-/** Small, dependency-free validators shared by the auth forms. */
 
 export const isEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim())
 
