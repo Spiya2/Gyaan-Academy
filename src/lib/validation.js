@@ -9,6 +9,18 @@ export function validateLogin({ email, password }) {
   return errors
 }
 
+export function validateContact({ name, email, subject, message }) {
+  const errors = {}
+  if (!name.trim()) errors.name = 'Name is required.'
+  else if (name.trim().length < 2) errors.name = 'Name must be at least 2 characters.'
+  if (!email.trim()) errors.email = 'Email is required.'
+  else if (!isEmail(email)) errors.email = 'Enter a valid email address.'
+  if (!subject.trim()) errors.subject = 'Subject is required.'
+  if (!message.trim()) errors.message = 'Message is required.'
+  else if (message.trim().length < 10) errors.message = 'Message must be at least 10 characters.'
+  return errors
+}
+
 export function validateRegister({ name, email, password, confirmPassword }) {
   const errors = {}
   if (!name.trim()) errors.name = 'Name is required.'

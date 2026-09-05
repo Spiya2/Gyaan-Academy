@@ -8,6 +8,7 @@ const links = [
   { to: '/', label: 'Home', end: true },
   { to: '/courses', label: 'Courses' },
   { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 function linkClass({ isActive }) {

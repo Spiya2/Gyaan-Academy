@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import Layout from './components/layout/Layout.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
 import Courses from './pages/Courses.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
@@ -25,6 +26,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="courses" element={<Courses />} />
           <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
