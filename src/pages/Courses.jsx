@@ -49,16 +49,37 @@ export default function Courses() {
     'h-10 rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-700 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100'
 
   return (
+    <>
+    <section className="border-b border-slate-200 bg-slate-50">
+<Container className="py-4">
+<nav aria-label="Breadcrumb">
+<ol className="flex items-center gap-2 text-sm">
+<li>
+<a href="/" className="text-slate-500 hover:text-brand-600" >
+Home
+</a>
+</li>
+<li className="text-slate-400" aria-hidden="true">
+/
+</li>
+<li className="font-medium text-slate-900" aria-current="page">
+Courses
+</li>
+</ol>
+</nav>
+</Container>
+</section>
+
     <Container className="py-12">
-      <header className="max-w-2xl hidden">
+      <header className="max-w-2xl">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Course catalogue</h1>
         <p className="mt-2 text-slate-600">
-          Search and filter {status === 'success' ? courses.length : ''} courses across web
+          Search and filter courses across web
           development, design and data.
         </p>
       </header>
 
-      <Card className="mt-8 p-4 hidden">
+      <Card className="mt-8 p-4">
         <div className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
           <div>
             <label htmlFor="course-search" className="sr-only">
@@ -74,59 +95,7 @@ export default function Courses() {
             />
           </div>
 
-          <div>
-            <label htmlFor="filter-category" className="sr-only">
-              Filter by category
-            </label>
-            <select
-              id="filter-category"
-              value={category}
-              onChange={(event) => setCategory(event.target.value)}
-              className={selectClass}
-            >
-              {categories.map((option) => (
-                <option key={option} value={option}>
-                  {option === 'All' ? 'All categories' : option}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="filter-level" className="sr-only">
-              Filter by level
-            </label>
-            <select
-              id="filter-level"
-              value={level}
-              onChange={(event) => setLevel(event.target.value)}
-              className={selectClass}
-            >
-              {LEVELS.map((option) => (
-                <option key={option} value={option}>
-                  {option === 'All' ? 'All levels' : option}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="sort-by" className="sr-only">
-              Sort courses
-            </label>
-            <select
-              id="sort-by"
-              value={sort}
-              onChange={(event) => setSort(event.target.value)}
-              className={selectClass}
-            >
-              {Object.entries(SORTS).map(([value, label]) => (
-                <option key={value} value={value}>
-                  {label}
-                </option>
-              ))}
-            </select>
-          </div>
+   
         </div>
       </Card>
 
@@ -155,5 +124,6 @@ export default function Courses() {
         )}
       </div>
     </Container>
+    </>
   )
 }

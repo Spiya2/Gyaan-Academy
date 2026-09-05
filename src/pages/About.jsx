@@ -26,6 +26,26 @@ const team = [
 export default function About() {
   return (
     <>
+    <section className="border-b border-slate-200 bg-slate-50">
+<Container className="py-4">
+<nav aria-label="Breadcrumb">
+<ol className="flex items-center gap-2 text-sm">
+<li>
+<a href="/" className="text-slate-500 hover:text-brand-600" >
+Home
+</a>
+</li>
+<li className="text-slate-400" aria-hidden="true">
+/
+</li>
+<li className="font-medium text-slate-900" aria-current="page">
+About
+</li>
+</ol>
+</nav>
+</Container>
+</section>
+
       <section className="border-b border-slate-200 bg-white">
         <Container className="max-w-3xl py-16">
           <h1 className="text-4xl font-bold tracking-tight text-slate-900">About GyaanAcademy</h1>
